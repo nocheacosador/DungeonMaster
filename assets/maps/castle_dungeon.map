@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<map heigth="23" maxX="10" maxY="16" minX="-10" minY="-6" name="map" width="21">
+<map heigth="23" maxX="10" maxY="16" minX="-10" minY="-6" name="map" version="1.0" width="21">
     <slot spawn="false" spawnID="-1" walkable="false" x="-10" y="-6"/>
     <slot spawn="false" spawnID="-1" walkable="false" x="-10" y="-5"/>
     <slot spawn="false" spawnID="-1" walkable="false" x="-10" y="-4"/>

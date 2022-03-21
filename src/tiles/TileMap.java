@@ -368,13 +368,18 @@ public class TileMap implements ComplexRenderable {
             Document document = documentBuilder.parse(file);
             document.getDocumentElement().normalize();
 
-            // TODO: Implement map file versioning
-
             Element map = document.getDocumentElement();
             if (map.getNodeName() != "map") {
                 throw new IOException("File not in MAP format or corrupted");
             }
-            //map.getAttribute("name", "map");
+            String version = map.getAttribute("version");
+
+            if (version != "1.0") {
+                throw new IOException("MAP this map file version is not supported. Version was: " + version);
+            }
+
+            System.out.println("Parsing MAP file. Version: " + version);
+
             int width = Integer.parseInt(map.getAttribute("width"));
             int height = Integer.parseInt(map.getAttribute("heigth"));
             int minX = Integer.parseInt(map.getAttribute("minX"));
@@ -411,6 +416,7 @@ public class TileMap implements ComplexRenderable {
         } catch (ParserConfigurationException | SAXException | IOException e) {
             e.printStackTrace();
             initEmpty(1, 1);
+            this.file = null;
             return false;
         }
 
@@ -461,6 +467,8 @@ public class TileMap implements ComplexRenderable {
             Document document = documentBuilder.newDocument();
 
             Element root = document.createElement("map");
+
+            root.setAttribute("version", "1.0");
             root.setAttribute("name", "map");
             root.setAttribute("width", String.valueOf(getWidth()));
             root.setAttribute("heigth", String.valueOf(getHeight()));
