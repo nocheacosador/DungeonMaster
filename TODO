@@ -1,0 +1,6 @@
+- [ ] Fix loading new map in tile editor (make grid to showup)
+- [ ] Abstract levels into classes
+- [ ] Implement more efficient saving of tile maps
+- [ ] Make proper game UI
+- [ ] Add python build scripts
+- [ ] Add logging

@@ -1,0 +1,1363 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<map heigth="22" maxX="9" maxY="11" minX="-12" minY="-10" name="map" width="22">
+    <slot spawn="false" spawnID="-1" walkable="false" x="-12" y="-10"/>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-12" y="-9"/>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-12" y="-8"/>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-12" y="-7"/>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-12" y="-6"/>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-12" y="-5"/>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-12" y="-4"/>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-12" y="-3"/>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-12" y="-2"/>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-12" y="-1"/>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-12" y="0"/>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-12" y="1"/>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-12" y="2"/>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-12" y="3"/>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-12" y="4"/>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-12" y="5"/>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-12" y="6"/>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-12" y="7"/>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-12" y="8"/>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-12" y="9"/>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-12" y="10"/>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-12" y="11"/>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-11" y="-10">
+        <tile id="35" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-11" y="-9">
+        <tile id="37" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-11" y="-8">
+        <tile id="37" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-11" y="-7">
+        <tile id="37" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-11" y="-6">
+        <tile id="37" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-11" y="-5">
+        <tile id="37" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-11" y="-4">
+        <tile id="37" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-11" y="-3">
+        <tile id="37" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-11" y="-2">
+        <tile id="37" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-11" y="-1">
+        <tile id="37" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-11" y="0">
+        <tile id="37" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-11" y="1">
+        <tile id="37" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-11" y="2">
+        <tile id="37" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-11" y="3">
+        <tile id="37" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-11" y="4">
+        <tile id="37" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-11" y="5">
+        <tile id="37" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-11" y="6">
+        <tile id="37" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-11" y="7">
+        <tile id="37" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-11" y="8">
+        <tile id="37" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-11" y="9">
+        <tile id="37" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-11" y="10">
+        <tile id="39" layer="1"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-11" y="11"/>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-10" y="-10">
+        <tile id="1" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-10" y="-9">
+        <tile id="4" layer="1"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-10" y="-8">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-10" y="-7">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-10" y="-6">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-10" y="-5">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-10" y="-4">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-10" y="-3">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-10" y="-2">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-10" y="-1">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-10" y="0">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-10" y="1">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-10" y="2">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-10" y="3">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-10" y="4">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-10" y="5">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-10" y="6">
+        <tile id="29" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-10" y="7">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-10" y="8">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-10" y="9">
+        <tile id="28" layer="0"/>
+        <tile id="1" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-10" y="10">
+        <tile id="4" layer="1"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-10" y="11"/>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-9" y="-10">
+        <tile id="20" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-9" y="-9">
+        <tile id="21" layer="1"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-9" y="-8">
+        <tile id="22" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-9" y="-7">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-9" y="-6">
+        <tile id="25" layer="0"/>
+        <tile id="17" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-9" y="-5">
+        <tile id="25" layer="0"/>
+        <tile id="18" layer="1"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-9" y="-4">
+        <tile id="22" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-9" y="-3">
+        <tile id="27" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-9" y="-2">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-9" y="-1">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-9" y="0">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-9" y="1">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-9" y="2">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-9" y="3">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-9" y="4">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-9" y="5">
+        <tile id="25" layer="0"/>
+        <tile id="17" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-9" y="6">
+        <tile id="25" layer="0"/>
+        <tile id="18" layer="1"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-9" y="7">
+        <tile id="22" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-9" y="8">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-9" y="9">
+        <tile id="25" layer="0"/>
+        <tile id="20" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-9" y="10">
+        <tile id="21" layer="1"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-9" y="11">
+        <tile id="19" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-8" y="-10">
+        <tile id="1" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-8" y="-9">
+        <tile id="4" layer="1"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-8" y="-8">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="true" spawnID="4" walkable="true" x="-8" y="-7">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-8" y="-6">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-8" y="-5">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-8" y="-4">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-8" y="-3">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-8" y="-2">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-8" y="-1">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-8" y="0">
+        <tile id="27" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-8" y="1">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-8" y="2">
+        <tile id="28" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-8" y="3">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-8" y="4">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-8" y="5">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-8" y="6">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-8" y="7">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="true" spawnID="5" walkable="true" x="-8" y="8">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-8" y="9">
+        <tile id="25" layer="0"/>
+        <tile id="1" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-8" y="10">
+        <tile id="15" layer="1"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-8" y="11"/>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-7" y="-10">
+        <tile id="6" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-7" y="-9">
+        <tile id="9" layer="1"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-7" y="-8">
+        <tile id="10" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-7" y="-7">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-7" y="-6">
+        <tile id="29" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-7" y="-5">
+        <tile id="30" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-7" y="-4">
+        <tile id="31" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-7" y="-3">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-7" y="-2">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-7" y="-1">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-7" y="0">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-7" y="1">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-7" y="2">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-7" y="3">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-7" y="4">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-7" y="5">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-7" y="6">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-7" y="7">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-7" y="8">
+        <tile id="27" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-7" y="9">
+        <tile id="25" layer="0"/>
+        <tile id="1" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-7" y="10">
+        <tile id="4" layer="1"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-7" y="11"/>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-6" y="-10">
+        <tile id="1" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-6" y="-9">
+        <tile id="4" layer="1"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-6" y="-8">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="true" spawnID="3" walkable="true" x="-6" y="-7">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-6" y="-6">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-6" y="-5">
+        <tile id="28" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-6" y="-4">
+        <tile id="32" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-6" y="-3">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-6" y="-2">
+        <tile id="29" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-6" y="-1">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-6" y="0">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-6" y="1">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-6" y="2">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-6" y="3">
+        <tile id="27" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-6" y="4">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-6" y="5">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-6" y="6">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-6" y="7">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="true" spawnID="6" walkable="true" x="-6" y="8">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-6" y="9">
+        <tile id="25" layer="0"/>
+        <tile id="1" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-6" y="10">
+        <tile id="14" layer="1"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-6" y="11"/>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-5" y="-10">
+        <tile id="20" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-5" y="-9">
+        <tile id="21" layer="1"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-5" y="-8">
+        <tile id="22" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-5" y="-7">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-5" y="-6">
+        <tile id="25" layer="0"/>
+        <tile id="17" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-5" y="-5">
+        <tile id="25" layer="0"/>
+        <tile id="18" layer="1"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-5" y="-4">
+        <tile id="22" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-5" y="-3">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-5" y="-2">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-5" y="-1">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-5" y="0">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-5" y="1">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-5" y="2">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-5" y="3">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-5" y="4">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-5" y="5">
+        <tile id="25" layer="0"/>
+        <tile id="17" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-5" y="6">
+        <tile id="25" layer="0"/>
+        <tile id="18" layer="1"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-5" y="7">
+        <tile id="22" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-5" y="8">
+        <tile id="29" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-5" y="9">
+        <tile id="25" layer="0"/>
+        <tile id="20" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-5" y="10">
+        <tile id="21" layer="1"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-5" y="11">
+        <tile id="19" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-4" y="-10">
+        <tile id="1" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-4" y="-9">
+        <tile id="12" layer="1"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-4" y="-8">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-4" y="-7">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-4" y="-6">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-4" y="-5">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-4" y="-4">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-4" y="-3">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-4" y="-2">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-4" y="-1">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-4" y="0">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-4" y="1">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-4" y="2">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-4" y="3">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-4" y="4">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-4" y="5">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-4" y="6">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-4" y="7">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-4" y="8">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-4" y="9">
+        <tile id="25" layer="0"/>
+        <tile id="1" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-4" y="10">
+        <tile id="4" layer="1"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-4" y="11"/>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-3" y="-10"/>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-3" y="-9">
+        <tile id="57" layer="1"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-3" y="-8">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-3" y="-7">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-3" y="-6">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-3" y="-5">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-3" y="-4">
+        <tile id="29" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-3" y="-3">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-3" y="-2">
+        <tile id="25" layer="0"/>
+        <tile id="17" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-3" y="-1">
+        <tile id="25" layer="0"/>
+        <tile id="18" layer="1"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-3" y="0">
+        <tile id="22" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-3" y="1">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-3" y="2">
+        <tile id="25" layer="0"/>
+        <tile id="17" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-3" y="3">
+        <tile id="25" layer="0"/>
+        <tile id="18" layer="1"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-3" y="4">
+        <tile id="22" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-3" y="5">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-3" y="6">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-3" y="7">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-3" y="8">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-3" y="9">
+        <tile id="25" layer="0"/>
+        <tile id="1" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-3" y="10">
+        <tile id="23" layer="1"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-3" y="11"/>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-2" y="-10"/>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-2" y="-9"/>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-2" y="-8">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-2" y="-7">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-2" y="-6">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-2" y="-5">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-2" y="-4">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-2" y="-3">
+        <tile id="26" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-2" y="-2">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-2" y="-1">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="true" spawnID="0" walkable="true" x="-2" y="0">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-2" y="1">
+        <tile id="29" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-2" y="2">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-2" y="3">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-2" y="4">
+        <tile id="29" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-2" y="5">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-2" y="6">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-2" y="7">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-2" y="8">
+        <tile id="26" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-2" y="9">
+        <tile id="25" layer="0"/>
+        <tile id="1" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-2" y="10">
+        <tile id="11" layer="1"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-2" y="11"/>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-1" y="-10"/>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-1" y="-9"/>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-1" y="-8">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-1" y="-7">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-1" y="-6">
+        <tile id="26" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-1" y="-5">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-1" y="-4">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-1" y="-3">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-1" y="-2">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-1" y="-1">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-1" y="0">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-1" y="1">
+        <tile id="26" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-1" y="2">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-1" y="3">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-1" y="4">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-1" y="5">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-1" y="6">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-1" y="7">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-1" y="8">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="-1" y="9">
+        <tile id="25" layer="0"/>
+        <tile id="1" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-1" y="10">
+        <tile id="4" layer="1"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="-1" y="11"/>
+    <slot spawn="false" spawnID="-1" walkable="false" x="0" y="-10"/>
+    <slot spawn="false" spawnID="-1" walkable="false" x="0" y="-9"/>
+    <slot spawn="false" spawnID="-1" walkable="true" x="0" y="-8">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="0" y="-7">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="0" y="-6">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="0" y="-5">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="0" y="-4">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="0" y="-3">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="0" y="-2">
+        <tile id="25" layer="0"/>
+        <tile id="17" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="0" y="-1">
+        <tile id="25" layer="0"/>
+        <tile id="18" layer="1"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="0" y="0">
+        <tile id="22" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="0" y="1">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="0" y="2">
+        <tile id="25" layer="0"/>
+        <tile id="17" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="0" y="3">
+        <tile id="25" layer="0"/>
+        <tile id="18" layer="1"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="0" y="4">
+        <tile id="22" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="0" y="5">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="0" y="6">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="0" y="7">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="0" y="8">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="0" y="9">
+        <tile id="25" layer="0"/>
+        <tile id="1" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="0" y="10">
+        <tile id="12" layer="1"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="0" y="11"/>
+    <slot spawn="false" spawnID="-1" walkable="false" x="1" y="-10">
+        <tile id="1" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="1" y="-9">
+        <tile id="4" layer="1"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="1" y="-8">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="1" y="-7">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="1" y="-6">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="1" y="-5">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="1" y="-4">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="1" y="-3">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="1" y="-2">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="1" y="-1">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="1" y="0">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="1" y="1">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="1" y="2">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="1" y="3">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="1" y="4">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="1" y="5">
+        <tile id="26" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="1" y="6">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="1" y="7">
+        <tile id="27" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="1" y="8">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="1" y="9">
+        <tile id="25" layer="0"/>
+        <tile id="1" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="1" y="10">
+        <tile id="4" layer="1"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="1" y="11"/>
+    <slot spawn="false" spawnID="-1" walkable="false" x="2" y="-10">
+        <tile id="20" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="2" y="-9">
+        <tile id="21" layer="1"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="2" y="-8">
+        <tile id="22" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="2" y="-7">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="2" y="-6">
+        <tile id="29" layer="0"/>
+        <tile id="17" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="2" y="-5">
+        <tile id="29" layer="0"/>
+        <tile id="18" layer="1"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="2" y="-4">
+        <tile id="22" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="2" y="-3">
+        <tile id="29" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="2" y="-2">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="2" y="-1">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="2" y="0">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="2" y="1">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="2" y="2">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="2" y="3">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="2" y="4">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="2" y="5">
+        <tile id="25" layer="0"/>
+        <tile id="17" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="2" y="6">
+        <tile id="25" layer="0"/>
+        <tile id="18" layer="1"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="2" y="7">
+        <tile id="22" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="2" y="8">
+        <tile id="26" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="2" y="9">
+        <tile id="25" layer="0"/>
+        <tile id="20" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="2" y="10">
+        <tile id="21" layer="1"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="2" y="11">
+        <tile id="19" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="3" y="-10">
+        <tile id="1" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="3" y="-9">
+        <tile id="4" layer="1"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="3" y="-8">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="true" spawnID="1" walkable="true" x="3" y="-7">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="3" y="-6">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="3" y="-5">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="3" y="-4">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="3" y="-3">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="3" y="-2">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="3" y="-1">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="3" y="0">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="3" y="1">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="3" y="2">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="3" y="3">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="3" y="4">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="3" y="5">
+        <tile id="32" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="3" y="6">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="3" y="7">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="true" spawnID="7" walkable="true" x="3" y="8">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="3" y="9">
+        <tile id="25" layer="0"/>
+        <tile id="1" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="3" y="10">
+        <tile id="13" layer="1"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="3" y="11"/>
+    <slot spawn="false" spawnID="-1" walkable="false" x="4" y="-10">
+        <tile id="6" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="4" y="-9">
+        <tile id="7" layer="1"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="4" y="-8">
+        <tile id="8" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="4" y="-7">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="4" y="-6">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="4" y="-5">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="4" y="-4">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="4" y="-3">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="4" y="-2">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="4" y="-1">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="4" y="0">
+        <tile id="29" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="4" y="1">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="4" y="2">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="4" y="3">
+        <tile id="27" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="4" y="4">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="4" y="5">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="4" y="6">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="4" y="7">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="4" y="8">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="4" y="9">
+        <tile id="25" layer="0"/>
+        <tile id="1" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="4" y="10">
+        <tile id="4" layer="1"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="4" y="11"/>
+    <slot spawn="false" spawnID="-1" walkable="false" x="5" y="-10">
+        <tile id="1" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="5" y="-9">
+        <tile id="4" layer="1"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="5" y="-8">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="true" spawnID="2" walkable="true" x="5" y="-7">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="5" y="-6">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="5" y="-5">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="5" y="-4">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="5" y="-3">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="5" y="-2">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="5" y="-1">
+        <tile id="27" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="5" y="0">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="5" y="1">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="5" y="2">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="5" y="3">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="5" y="4">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="5" y="5">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="5" y="6">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="5" y="7">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="true" spawnID="8" walkable="true" x="5" y="8">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="5" y="9">
+        <tile id="25" layer="0"/>
+        <tile id="1" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="5" y="10">
+        <tile id="16" layer="1"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="5" y="11"/>
+    <slot spawn="false" spawnID="-1" walkable="false" x="6" y="-10">
+        <tile id="20" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="6" y="-9">
+        <tile id="21" layer="1"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="6" y="-8">
+        <tile id="22" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="6" y="-7">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="6" y="-6">
+        <tile id="25" layer="0"/>
+        <tile id="17" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="6" y="-5">
+        <tile id="25" layer="0"/>
+        <tile id="18" layer="1"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="6" y="-4">
+        <tile id="22" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="6" y="-3">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="6" y="-2">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="6" y="-1">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="6" y="0">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="6" y="1">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="6" y="2">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="6" y="3">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="6" y="4">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="6" y="5">
+        <tile id="25" layer="0"/>
+        <tile id="17" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="6" y="6">
+        <tile id="25" layer="0"/>
+        <tile id="18" layer="1"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="6" y="7">
+        <tile id="22" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="6" y="8">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="6" y="9">
+        <tile id="25" layer="0"/>
+        <tile id="20" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="6" y="10">
+        <tile id="21" layer="1"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="6" y="11">
+        <tile id="19" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="7" y="-10">
+        <tile id="1" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="7" y="-9">
+        <tile id="4" layer="1"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="7" y="-8">
+        <tile id="32" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="7" y="-7">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="7" y="-6">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="7" y="-5">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="7" y="-4">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="7" y="-3">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="7" y="-2">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="7" y="-1">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="7" y="0">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="7" y="1">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="7" y="2">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="7" y="3">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="7" y="4">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="7" y="5">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="7" y="6">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="7" y="7">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="7" y="8">
+        <tile id="25" layer="0"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="true" x="7" y="9">
+        <tile id="25" layer="0"/>
+        <tile id="1" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="7" y="10">
+        <tile id="4" layer="1"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="7" y="11"/>
+    <slot spawn="false" spawnID="-1" walkable="false" x="8" y="-10">
+        <tile id="36" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="8" y="-9">
+        <tile id="38" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="8" y="-8">
+        <tile id="38" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="8" y="-7">
+        <tile id="38" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="8" y="-6">
+        <tile id="38" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="8" y="-5">
+        <tile id="38" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="8" y="-4">
+        <tile id="38" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="8" y="-3">
+        <tile id="38" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="8" y="-2">
+        <tile id="38" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="8" y="-1">
+        <tile id="38" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="8" y="0">
+        <tile id="38" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="8" y="1">
+        <tile id="38" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="8" y="2">
+        <tile id="38" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="8" y="3">
+        <tile id="38" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="8" y="4">
+        <tile id="38" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="8" y="5">
+        <tile id="38" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="8" y="6">
+        <tile id="38" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="8" y="7">
+        <tile id="38" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="8" y="8">
+        <tile id="38" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="8" y="9">
+        <tile id="38" layer="2"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="8" y="10">
+        <tile id="40" layer="1"/>
+    </slot>
+    <slot spawn="false" spawnID="-1" walkable="false" x="8" y="11"/>
+    <slot spawn="false" spawnID="-1" walkable="false" x="9" y="-10"/>
+    <slot spawn="false" spawnID="-1" walkable="false" x="9" y="-9"/>
+    <slot spawn="false" spawnID="-1" walkable="false" x="9" y="-8"/>
+    <slot spawn="false" spawnID="-1" walkable="false" x="9" y="-7"/>
+    <slot spawn="false" spawnID="-1" walkable="false" x="9" y="-6"/>
+    <slot spawn="false" spawnID="-1" walkable="false" x="9" y="-5"/>
+    <slot spawn="false" spawnID="-1" walkable="false" x="9" y="-4"/>
+    <slot spawn="false" spawnID="-1" walkable="false" x="9" y="-3"/>
+    <slot spawn="false" spawnID="-1" walkable="false" x="9" y="-2"/>
+    <slot spawn="false" spawnID="-1" walkable="false" x="9" y="-1"/>
+    <slot spawn="false" spawnID="-1" walkable="false" x="9" y="0"/>
+    <slot spawn="false" spawnID="-1" walkable="false" x="9" y="1"/>
+    <slot spawn="false" spawnID="-1" walkable="false" x="9" y="2"/>
+    <slot spawn="false" spawnID="-1" walkable="false" x="9" y="3"/>
+    <slot spawn="false" spawnID="-1" walkable="false" x="9" y="4"/>
+    <slot spawn="false" spawnID="-1" walkable="false" x="9" y="5"/>
+    <slot spawn="false" spawnID="-1" walkable="false" x="9" y="6"/>
+    <slot spawn="false" spawnID="-1" walkable="false" x="9" y="7"/>
+    <slot spawn="false" spawnID="-1" walkable="false" x="9" y="8"/>
+    <slot spawn="false" spawnID="-1" walkable="false" x="9" y="9"/>
+    <slot spawn="false" spawnID="-1" walkable="false" x="9" y="10"/>
+    <slot spawn="false" spawnID="-1" walkable="false" x="9" y="11"/>
+</map>
