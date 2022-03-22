@@ -74,4 +74,12 @@ public class Renderer {
             graphics.endDraw();
         }
     }
+
+    public int getWidth() {
+        return graphics.width;
+    }
+
+    public int getHeight() {
+        return graphics.height;
+    }
 }

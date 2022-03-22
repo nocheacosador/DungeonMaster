@@ -2,7 +2,6 @@ package game;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
@@ -10,6 +9,10 @@ import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 
 import game.characters.Character;
+import game.levels.FirstLevel;
+import game.levels.Level;
+import game.levels.SecondLevel;
+import game.levels.ThirdLevel;
 import game.characters.*;
 import gui.game.HealthIndicator;
 import gui.util.FontManager;
@@ -21,7 +24,6 @@ import processing.event.KeyEvent;
 import processing.event.MouseEvent;
 import processing.opengl.PGraphicsOpenGL;
 import processing.sound.SoundFile;
-import rendering.RenderLayer;
 import rendering.Renderer;
 import rendering.TextureManager;
 import sound.SoundsManager;
@@ -45,21 +47,23 @@ public class DungeonMaster extends PApplet {
     final float[] BUTTON_COLOR_ACTIVE = new float[] { 0, 255, 157, 255 };
 
     Label titleLabel;
-    Label level1Button;
-    Label level2Button;
-    Label level3Button;
+    List<Label> levelButtons;
 
     Character leftCharacter;
     Character rightCharacter;
 
     SoundFile themeSong;
-    SoundFile bossSong;
-    float bossSongAmp = 0;
 
     // game objects
     Character player;
-    List<Character> npcs;
     HealthIndicator healthIndicator;
+    
+    int levelIndex = 0;
+    Level[] levels = {
+        new FirstLevel(),
+        new SecondLevel(),
+        new ThirdLevel()
+    };
 
     boolean upPressed;
     boolean downPressed;
@@ -88,20 +92,7 @@ public class DungeonMaster extends PApplet {
         StartMenu, GameRunning, GamePaused, GameOver, LevelComplete
     };
 
-    enum Level {
-        One, Two, Three, None;
-
-        public Level next() {
-            switch (this) {
-                case One:   return Two;
-                case Two:   return Three;
-                default:    return None;
-            }
-        }
-    }
-
     State gameState = State.StartMenu;
-    Level level = Level.One;
 
     public void settings() {
         size(1200, 800, P2D);
@@ -119,6 +110,8 @@ public class DungeonMaster extends PApplet {
         SoundsManager.getInstance().load(this);         // takes ages
         TileFactory.getInstance().load();
         
+        SoundsManager.getInstance().setVolume(0.5f);
+
         graphics = createGraphics(width, height, P2D);
         renderer = new Renderer(graphics);
 
@@ -130,6 +123,30 @@ public class DungeonMaster extends PApplet {
         createGameOverMenu();
         createPauseMenu();
         createLevelCompleteMenu();
+
+        for (Level level : levels) {
+            level.setLevelCompleteCallback( (l) -> {
+                l.unload();
+                gameState = State.LevelComplete;
+            });
+        }
+
+        player = CharacterFactory.createCharacter(playerCharacter);
+        /*player.setDeathHandler(new Character.DeathHandler() {
+            @Override
+            public void onDeath() {
+                System.out.println("You dead, nigga");
+                gameState = State.GameOver;
+            }
+        });*/
+        player.setDeathHandler( () -> {
+            System.out.println("You dead, nigga");
+            gameState = State.GameOver;
+        });
+
+        healthIndicator = new HealthIndicator(player);
+        healthIndicator.setPosition(width / 2, height - 10);
+        healthIndicator.scale = 4;
     }
   
     public void draw() {
@@ -148,36 +165,32 @@ public class DungeonMaster extends PApplet {
 
         // handle events
         while (!eventQueue.isEmpty()) {
-            try {
-                Event event = eventQueue.take();
+            Event event = eventQueue.poll();
 
-                switch (event.getFlavor()) {
-                    case Event.MOUSE:
-                        switch (event.getAction()) {
-                            case MouseEvent.CLICK:
-                                onMouseClicked((MouseEvent)event);
-                                break;
-                            default: 
-                                break;
-                        }
-                        break;
-                    case Event.KEY:
-                        switch (event.getAction()) {
-                            case KeyEvent.PRESS:
-                                onKeyPressed((KeyEvent)event);
-                                break;
-                            case KeyEvent.RELEASE:
-                                onKeyReleased((KeyEvent)event);
-                                break;
-                            default:  
-                                break;
-                        }
-                        break;
-                    default: 
-                        break;
-                }
-            } catch (InterruptedException e) {
-                e.printStackTrace();
+            switch (event.getFlavor()) {
+                case Event.MOUSE:
+                    switch (event.getAction()) {
+                        case MouseEvent.CLICK:
+                            onMouseClicked((MouseEvent)event);
+                            break;
+                        default: 
+                            break;
+                    }
+                    break;
+                case Event.KEY:
+                    switch (event.getAction()) {
+                        case KeyEvent.PRESS:
+                            onKeyPressed((KeyEvent)event);
+                            break;
+                        case KeyEvent.RELEASE:
+                            onKeyReleased((KeyEvent)event);
+                            break;
+                        default:  
+                            break;
+                    }
+                    break;
+                default: 
+                    break;
             }
         }
 
@@ -211,17 +224,15 @@ public class DungeonMaster extends PApplet {
         titleLabel.align = CENTER;
         titleLabel.color = TITLE_COLOR;
 
-        level1Button = new Label("Level 1", width / 2, 360, 50, "Consolas Bold");
-        level1Button.align = CENTER;
-        level1Button.color = BUTTON_COLOR;
-
-        level2Button = new Label("Level 2", width / 2, 420, 50, "Consolas Bold");
-        level2Button.align = CENTER;
-        level2Button.color = BUTTON_COLOR;
-
-        level3Button = new Label("Level 3", width / 2, 480, 50, "Consolas Bold");
-        level3Button.align = CENTER;
-        level3Button.color = BUTTON_COLOR;
+        levelButtons = new LinkedList<Label>();
+        int levelButtonY = 360;
+        for (Level level : levels) {
+            Label levelButton = new Label(level.getName(), width / 2, levelButtonY, 50, "Consolas Bold");
+            levelButton.align = CENTER;
+            levelButton.color = BUTTON_COLOR;
+            levelButtons.add(levelButton);
+            levelButtonY += 60;
+        }
 
         Random rand = new Random();
         
@@ -280,34 +291,23 @@ public class DungeonMaster extends PApplet {
     }
     
     private void startMenu() {
-        if (level1Button.contains(mouseX, mouseY)) level1Button.color = BUTTON_COLOR_ACTIVE;
-        else                                       level1Button.color = BUTTON_COLOR;
-
-        if (level2Button.contains(mouseX, mouseY)) level2Button.color = BUTTON_COLOR_ACTIVE;
-        else                                       level2Button.color = BUTTON_COLOR;
-
-        if (level3Button.contains(mouseX, mouseY)) level3Button.color = BUTTON_COLOR_ACTIVE;
-        else                                       level3Button.color = BUTTON_COLOR;
+        for (Label levelButton : levelButtons) {
+            if (levelButton.contains(mouseX, mouseY)) levelButton.color = BUTTON_COLOR_ACTIVE;
+            else                                      levelButton.color = BUTTON_COLOR;
+        }
 
         leftCharacter.update(millis(), null, null);
         rightCharacter.update(millis(), null, null);
 
         renderer.submit(titleLabel);
-        renderer.submit(level1Button);
-        renderer.submit(level2Button);
-        renderer.submit(level3Button);
-
+        for (Label levelButton : levelButtons) {
+            renderer.submit(levelButton);
+        }
         renderer.submit(leftCharacter);
         renderer.submit(rightCharacter);
     }
         
     private void gameRunning() {
-        // camera folowing player1
-        
-        //if (npcs.isEmpty()) {
-            //gameState = State.LevelComplete;
-        //}
-
         if (wPressed || upPressed)          player.setVerticalMove(Character.UP);
         else if (sPressed || downPressed)   player.setVerticalMove(Character.DOWN);
         else                                player.setVerticalMove(Character.STILL);
@@ -315,11 +315,11 @@ public class DungeonMaster extends PApplet {
         if (aPressed || leftPressed)        player.setHorizontalMove(Character.LEFT);
         else if (dPressed || rightPressed)  player.setHorizontalMove(Character.RIGHT);
         else                                player.setHorizontalMove(Character.STILL);
-
-        tileMap.update(millis());
-        player.update(millis(), tileMap, null);
         
-        float scale = 1.f;
+        levels[levelIndex].update(millis());
+        
+        // level 3 stuff
+        /*float scale = 1.f;
 
         if (level == Level.Three) {
             // -60 - scale 0.5
@@ -343,26 +343,10 @@ public class DungeonMaster extends PApplet {
                 if (bossSongAmp > 1.f) bossSongAmp = 1.f;
                 bossSong.amp(bossSongAmp);
             }
-        }
-
-        for (RenderLayer l : renderer.layers) {
-            if (l.name != "GUI") {
-                l.setTransform(width / 2 - player.getX() * scale, height / 2 - player.getY() * scale, scale);
-            }
-        }
-
-        //npcs.forEach( (c) -> { 
-        for ( Character c : npcs.toArray(new Character[0])) {
-            c.update(millis(), tileMap, player); 
-        }
-
-        renderer.submit(tileMap);
+        }*/
+        renderer.submit(levels[levelIndex]);
         renderer.submit(player);
         renderer.submit(healthIndicator);
-        //npcs.forEach( (c) -> {
-        for ( Character c : npcs.toArray(new Character[0])) {
-            renderer.submit(c);
-        }
     }
 
     private void gamePaused() {
@@ -397,163 +381,47 @@ public class DungeonMaster extends PApplet {
         renderer.submit(nextLevelButton);
     }
 
-    private void loadLevel(Level level) {
-        switch (level) {
-            case One:
-                loadLevel1();
-                break;
-            case Two:
-                loadLevel2();
-                break;
-            case Three:
-                loadLevel3();
-                break;
-            case None:
-                throw new RuntimeException("level was None");
-        }
+    private void loadLevel(int index) {
+        if (index < 0 || index >= levels.length) 
+            throw new RuntimeException("Level index was out of range");
+        
+        levelIndex = index;
+        loadLevel(levels[index]);
+    }
 
-        this.level = level;
+    private void loadLevel(String levelName) {
+        for (int i = 0; i < levels.length; i++) {
+            if (levels[i].getName() == levelName) {
+                levelIndex = i;
+                loadLevel(levels[i]);
+                return;
+            }
+        }
+        throw new RuntimeException("Level was not found");
+    }
+
+    private void loadLevel(Level level) {
+        level.setPlayerCharacter(player);
+        level.load();
     }
     
-    private void loadLevel1() {
-        tileMap = new TileMap("assets/maps/castle_dungeon.map");
-        player = CharacterFactory.createCharacter(playerCharacter);
-
-        healthIndicator = new HealthIndicator(player);
-        healthIndicator.setPosition(width / 2, height - 10);
-        healthIndicator.scale = 4;
-
-        Character npc1 = CharacterFactory.createCharacter("Big Zombie");
-        Character npc2 = CharacterFactory.createCharacter("Tiny Zombie");
-
-        player.setSpawnSlot(tileMap.getSpawn(0));
-        
-        player.setDeathHandler(new Character.DeathHandler() {
-            @Override
-            public void onDeath() {
-                System.out.println("You dead, nigga");
-                gameState = State.GameOver;
-            }
-        });
-        
-        npc1.setSpawnSlot(tileMap.getSpawn(1));
-        npc2.setSpawnSlot(tileMap.getSpawn(2));
-
-        npcs = new LinkedList<Character>(Arrays.asList(npc1, npc2));
-        
-        for (Character c : npcs.toArray(new Character[0])) { 
-            c.setDeathHandler(new Character.DeathHandler() {
-                @Override
-                public void onDeath() {
-                    npcs.remove(c);
-                }
-            });
-        }
-    }
-
-    private void loadLevel2() {
-        tileMap = new TileMap("assets/maps/square_hall.map");
-        player = CharacterFactory.createCharacter(playerCharacter);
-
-        healthIndicator = new HealthIndicator(player);
-        healthIndicator.setPosition(width / 2, height - 10);
-        healthIndicator.scale = 4;
-
-        Character npc1 = CharacterFactory.createCharacter("Big Zombie");
-        Character npc2 = CharacterFactory.createCharacter("Tiny Zombie");
-        Character npc3 = CharacterFactory.createCharacter("Tiny Zombie");
-        Character npc4 = CharacterFactory.createCharacter("Skelet");
-        Character npc5 = CharacterFactory.createCharacter("Skelet");
-
-        player.setSpawnSlot(tileMap.getSpawn(0));
-        
-        player.setDeathHandler(new Character.DeathHandler() {
-            @Override
-            public void onDeath() {
-                System.out.println("You dead, nigga");
-                gameState = State.GameOver;
-            }
-        });
-        
-        npc1.setSpawnSlot(tileMap.getSpawn(1));
-        npc2.setSpawnSlot(tileMap.getSpawn(3));
-        npc3.setSpawnSlot(tileMap.getSpawn(4));
-        npc4.setSpawnSlot(tileMap.getSpawn(5));
-        npc5.setSpawnSlot(tileMap.getSpawn(6));
-
-        npcs = new LinkedList<Character>(Arrays.asList(npc1, npc2, npc3, npc4, npc5));
-        
-        for (Character c : npcs.toArray(new Character[0])) { 
-            c.setDeathHandler(new Character.DeathHandler() {
-                @Override
-                public void onDeath() {
-                    npcs.remove(c);
-                }
-            });
-        }
-    }
-
-    private void loadLevel3() {
-        tileMap = new TileMap("assets/maps/GilgameshDungeon.map");
-        player = CharacterFactory.createCharacter(playerCharacter);
-
-        healthIndicator = new HealthIndicator(player);
-        healthIndicator.setPosition(width / 2, height - 10);
-        healthIndicator.scale = 4;
-
-        Character npc1 = CharacterFactory.createCharacter("Demon");
-        //Character npc2 = CharacterFactory.createCharacter("Tiny Zombie");
-
-        player.setSpawnSlot(tileMap.getSpawn(0));
-        
-        player.setDeathHandler(new Character.DeathHandler() {
-            @Override
-            public void onDeath() {
-                System.out.println("You dead, nigga");
-                gameState = State.GameOver;
-            }
-        });
-        
-        bossSong = SoundsManager.getInstance().get("boss song");
-        bossSongAmp = 0;
-        bossSong.stop();
-        npc1.setSpawnSlot(tileMap.getSpawn(1));
-        //npc2.setSpawnSlot(tileMap.getSpawn(2));
-
-        npcs = new LinkedList<Character>(Arrays.asList(npc1));
-        
-        for (Character c : npcs.toArray(new Character[0])) { 
-            c.setDeathHandler(new Character.DeathHandler() {
-                @Override
-                public void onDeath() {
-                    npcs.remove(c);
-                }
-            });
-        }
-    }
-
     private void onMouseClicked(MouseEvent e) {
         switch (gameState) {
             case GameRunning:
                 if (e.getButton() == LEFT) {
                     float mouseX = (e.getX() - width / 2 + player.getX());
                     float mouseY = (e.getY() - height / 2 + player.getY());
-                    player.attack(mouseX, mouseY, npcs);
+                    player.attack(mouseX, mouseY, levels[levelIndex].getNPCS());
                 }
                 break;
             
             case StartMenu:
-                if (level1Button.contains(mouseX, mouseY)) {
-                    loadLevel(Level.One);
-                    gameState = State.GameRunning;
-                }
-                else if (level2Button.contains(mouseX, mouseY)) {
-                    loadLevel(Level.Two);
-                    gameState = State.GameRunning;
-                }
-                else if (level3Button.contains(mouseX, mouseY)) {
-                    loadLevel(Level.Three);
-                    gameState = State.GameRunning;
+                for (Label levelButton : levelButtons) {
+                    if (levelButton.contains(mouseX, mouseY)) {
+                        loadLevel(levelButton.text);
+                        gameState = State.GameRunning;
+                        break;
+                    }
                 }
 
                 if (gameState != State.StartMenu) {
@@ -563,11 +431,12 @@ public class DungeonMaster extends PApplet {
 
             case GameOver:
                 if (restartButton.contains(mouseX, mouseY)) {
-                    loadLevel(level);
+                    loadLevel(levelIndex);
                     gameState = State.GameRunning;
                 }
                 else if (startMenuButton.contains(mouseX, mouseY)) {
                     gameState = State.StartMenu;
+                    levels[levelIndex].unload();
                     createStartMenu();
                 }
                 break;
@@ -575,22 +444,24 @@ public class DungeonMaster extends PApplet {
             case GamePaused:
                 if (continueButton.contains(mouseX, mouseY)) {
                     gameState = State.GameRunning;
+                    levels[levelIndex].resume();
                 }
                 else if (quitButton.contains(mouseX, mouseY)) {
                     gameState = State.StartMenu;
+                    levels[levelIndex].unload();
                     createStartMenu();
                 }
                 break;
             
             case LevelComplete:
                 if (nextLevelButton.contains(mouseX, mouseY)) {
-                    level = level.next();
-                    if (level == Level.None) {
+                    levelIndex++;
+                    if (levelIndex == levels.length) {
                         gameState = State.StartMenu;
                         createStartMenu();
                     }
                     else {
-                        loadLevel(level);
+                        loadLevel(levelIndex);
                         gameState = State.GameRunning;
                     }
                 }
@@ -629,15 +500,18 @@ public class DungeonMaster extends PApplet {
                 break;
             case 'E':
                 if ((e.getModifiers() & KeyEvent.CTRL) != 0) {
+                    levels[levelIndex].pause();
+
                     pause();
-                    launchEditor();
+                    launchEditor("\"" + levels[levelIndex].getTileMapFilePath() + "\"");
                     resume();
 
-                    tileMap.reload();
+                    loadLevel(levelIndex);
                 }
                 break;
             case 'P':
                 gameState = State.GamePaused;
+                levels[levelIndex].pause();
                 break;
         }
     }
@@ -687,7 +561,7 @@ public class DungeonMaster extends PApplet {
         eventQueue.add(e);
     }
 
-    private void launchEditor() {
+    private void launchEditor(String file) {
         if (gameState != State.GameRunning) return;
         
         Process theProcess = null;
@@ -698,7 +572,7 @@ public class DungeonMaster extends PApplet {
         
         try
         {
-            theProcess = Runtime.getRuntime().exec("java --enable-preview -jar TileEditor.jar \"" + tileMap.getFile().getAbsolutePath() + "\"");
+            theProcess = Runtime.getRuntime().exec("java --enable-preview -jar TileEditor.jar " + file);
         }
         catch(IOException e)
         {
@@ -706,7 +580,7 @@ public class DungeonMaster extends PApplet {
             e.printStackTrace();
         }
             
-        // read from the called program's standard output stream
+        // read from the called program's stdout and stderr streams
         try
         {
             outStream = new BufferedReader(new InputStreamReader( theProcess.getInputStream() ));  
@@ -725,10 +599,6 @@ public class DungeonMaster extends PApplet {
         }
 
         System.out.println("Tile Editor finnished");
-    }
-
-    public static float remap(float value, float from1, float to1, float from2, float to2) {
-        return (value - from1) / (to1 - from1) * (to2 - from2) + from2;
     }
 
     public static void main(String[] args) {

@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import processing.core.PApplet;
+import processing.sound.Sound;
 import processing.sound.SoundFile;
 
 public class SoundsManager {
@@ -27,7 +28,8 @@ public class SoundsManager {
     };
 
     private Map<String, SoundFile> sounds;
-    
+    private Sound sound;
+
     private static SoundsManager instance;
     
     private SoundsManager() {}
@@ -42,7 +44,8 @@ public class SoundsManager {
 
     public void load(PApplet applet) {
         sounds = new HashMap<String, SoundFile>();
-
+        sound = new Sound(applet);
+        
         for (SoundFileInfo si : SOUND_FILES) {
             SoundFile sf = new SoundFile(applet, si.path, si.cache);
             sounds.put(si.name, sf);
@@ -51,5 +54,9 @@ public class SoundsManager {
 
     public SoundFile get(String key) {
         return sounds.get(key);
+    }
+
+    public void setVolume(float volume) {
+        sound.volume(volume);
     }
 }

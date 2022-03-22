@@ -35,8 +35,9 @@ public abstract class Character extends Renderable {
         Idle, Running, Hit
     }
 
+    @FunctionalInterface
     public interface DeathHandler {
-        public void onDeath();
+        void onDeath();
     }
 
     protected float x = 0;
@@ -116,8 +117,6 @@ public abstract class Character extends Renderable {
     public void attack(float x, float y, List<Character> characters) {
         float dx = this.x - x;
         float dy = this.y - y;
-
-        System.out.println("Attack - x: " + x + " y: " + y);
         
         if (dx * dx + dy * dy > this.attackRadius * this.attackRadius) {
             return;
