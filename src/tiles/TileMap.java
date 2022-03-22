@@ -32,6 +32,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.LinkedList;
 
+import tiles.util.Version;
+
 public class TileMap implements ComplexRenderable {
     public static final int TILE_SIZE_ORIGINAL = 16;
     public static final int TILE_SCALE = 4;
@@ -372,13 +374,14 @@ public class TileMap implements ComplexRenderable {
             if (map.getNodeName() != "map") {
                 throw new IOException("File not in MAP format or corrupted");
             }
-            String version = map.getAttribute("version");
+            
+            Version version = new Version(map.getAttribute("version"));
 
-            if (version != "1.0") {
+            if (!version.equals(new Version("1.0"))) {
                 throw new IOException("MAP this map file version is not supported. Version was: " + version);
             }
 
-            System.out.println("Parsing MAP file. Version: " + version);
+            System.out.println("Parsing MAP file. Version: " + version.get());
 
             int width = Integer.parseInt(map.getAttribute("width"));
             int height = Integer.parseInt(map.getAttribute("heigth"));
