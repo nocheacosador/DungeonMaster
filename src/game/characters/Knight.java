@@ -4,8 +4,8 @@ import rendering.Texture;
 import rendering.TextureManager;
 
 class Knight extends Character {
-    public Knight() {
-        super();
+    public Knight(String name) {
+        super(name);
     }
 
     @Override

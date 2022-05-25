@@ -573,7 +573,7 @@
     <slot spawn="false" spawnID="-1" walkable="true" x="-11" y="6">
         <tile id="29" layer="0"/>
     </slot>
-    <slot spawn="false" spawnID="-1" walkable="true" x="-11" y="7">
+    <slot spawn="false" spawnID="-1" walkable="false" x="-11" y="7">
         <tile id="25" layer="0"/>
         <tile id="58" layer="1"/>
     </slot>
@@ -725,7 +725,7 @@
     </slot>
     <slot spawn="false" spawnID="-1" walkable="true" x="-10" y="7">
         <tile id="25" layer="0"/>
-        <tile id="61" layer="1"/>
+        <tile id="62" layer="1"/>
     </slot>
     <slot spawn="false" spawnID="-1" walkable="true" x="-10" y="8">
         <tile id="25" layer="0"/>
@@ -1017,7 +1017,7 @@
     <slot spawn="false" spawnID="-1" walkable="true" x="-8" y="6">
         <tile id="29" layer="0"/>
     </slot>
-    <slot spawn="false" spawnID="-1" walkable="true" x="-8" y="7">
+    <slot spawn="false" spawnID="-1" walkable="false" x="-8" y="7">
         <tile id="25" layer="0"/>
         <tile id="60" layer="1"/>
     </slot>
@@ -3782,7 +3782,7 @@
     <slot spawn="false" spawnID="-1" walkable="true" x="10" y="6">
         <tile id="29" layer="0"/>
     </slot>
-    <slot spawn="false" spawnID="-1" walkable="true" x="10" y="7">
+    <slot spawn="false" spawnID="-1" walkable="false" x="10" y="7">
         <tile id="25" layer="0"/>
         <tile id="58" layer="1"/>
     </slot>
@@ -3931,7 +3931,7 @@
     <slot spawn="false" spawnID="-1" walkable="true" x="11" y="6">
         <tile id="29" layer="0"/>
     </slot>
-    <slot spawn="false" spawnID="-1" walkable="true" x="11" y="7">
+    <slot spawn="false" spawnID="-1" walkable="false" x="11" y="7">
         <tile id="25" layer="0"/>
         <tile id="61" layer="1"/>
     </slot>
@@ -4079,7 +4079,7 @@
     <slot spawn="false" spawnID="-1" walkable="true" x="12" y="6">
         <tile id="29" layer="0"/>
     </slot>
-    <slot spawn="false" spawnID="-1" walkable="true" x="12" y="7">
+    <slot spawn="false" spawnID="-1" walkable="false" x="12" y="7">
         <tile id="25" layer="0"/>
     </slot>
     <slot spawn="false" spawnID="-1" walkable="true" x="12" y="8">
@@ -4226,7 +4226,7 @@
     <slot spawn="false" spawnID="-1" walkable="true" x="13" y="6">
         <tile id="29" layer="0"/>
     </slot>
-    <slot spawn="false" spawnID="-1" walkable="true" x="13" y="7">
+    <slot spawn="false" spawnID="-1" walkable="false" x="13" y="7">
         <tile id="25" layer="0"/>
         <tile id="60" layer="1"/>
     </slot>

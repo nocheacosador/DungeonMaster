@@ -16,7 +16,6 @@ public class FirstLevel extends Level {
         Character npc2 = CharacterFactory.createCharacter("Tiny Zombie");
 
         player.setSpawnSlot(tileMap.getSpawn(0));
-        player.health = player.maxHealth;
         
         npc1.setSpawnSlot(tileMap.getSpawn(1));
         npc2.setSpawnSlot(tileMap.getSpawn(2));

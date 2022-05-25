@@ -14,8 +14,8 @@ class Skelet extends Character {
     private int lastAttack = 0;
     private float sightLenght = TileMap.TILE_SIZE * 6;
 
-    public Skelet() {
-        super();
+    public Skelet(String name) {
+        super(name);
     }
 
     @Override

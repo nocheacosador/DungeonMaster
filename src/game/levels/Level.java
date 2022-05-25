@@ -37,6 +37,10 @@ public abstract class Level implements ComplexRenderable {
     public void load() {
         onLoad();
         callLevelCompleteCallback = false;
+
+        player.health = player.maxHealth;
+        player.setMove(Character.STILL, Character.STILL);
+
         System.out.println("[" + getName() + "] loaded." );
     }
     

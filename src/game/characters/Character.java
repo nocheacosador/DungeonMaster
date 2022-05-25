@@ -31,6 +31,8 @@ public abstract class Character extends Renderable {
 
     protected int updatePeriod = 125;
     
+    public final String name;
+
     private enum State {
         Idle, Running, Hit
     }
@@ -64,7 +66,8 @@ public abstract class Character extends Renderable {
     protected float boundsRight = TileMap.TILE_SIZE * 0.45f;    // relative to origin
     protected float boundsBottom = TileMap.TILE_SIZE * 0.2f;    // relative to origin
 
-    public Character() {
+    public Character(String name) {
+        this.name = name;
         layer = Renderer.MID;
 
         SoundsManager sm = SoundsManager.getInstance();

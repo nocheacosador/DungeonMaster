@@ -4,8 +4,8 @@ import rendering.Texture;
 import rendering.TextureManager;
 
 class Demon extends Character {
-    public Demon() {
-        super();
+    public Demon(String name) {
+        super(name);
     }
 
     @Override

@@ -14,8 +14,8 @@ class BigZombie extends Character {
     private int lastAttack = 0;
     private float sightLenght = TileMap.TILE_SIZE * 9;
     
-    public BigZombie() {
-        super();
+    public BigZombie(String name) {
+        super(name);
     }
 
     @Override

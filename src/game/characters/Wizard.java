@@ -4,8 +4,8 @@ import rendering.Texture;
 import rendering.TextureManager;
 
 class Wizard extends Character {
-    public Wizard() {
-        super();
+    public Wizard(String name) {
+        super(name);
     }
 
     @Override

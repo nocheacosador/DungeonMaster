@@ -16,13 +16,13 @@ public class CharacterFactory {
     public static Character createCharacter(String name) {
         switch (name) {
             // heroes:
-            case "Wizard":      return new Wizard();
-            case "Knight":      return new Knight();
+            case "Wizard":      return new Wizard(name);
+            case "Knight":      return new Knight(name);
             // bad guyz:
-            case "Big Zombie":  return new BigZombie();
-            case "Tiny Zombie": return new TinyZombie();
-            case "Skelet":      return new Skelet();
-            case "Demon":       return new Demon();
+            case "Big Zombie":  return new BigZombie(name);
+            case "Tiny Zombie": return new TinyZombie(name);
+            case "Skelet":      return new Skelet(name);
+            case "Demon":       return new Demon(name);
             default:            return null;
         }
     }

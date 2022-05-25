@@ -1,3 +1,7 @@
+/*
+Lukas Zajončkovskis
+*/
+
 package game;
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -35,7 +39,7 @@ public class DungeonMaster extends PApplet {
     Renderer renderer;
     PGraphics graphics;  
 
-    final String playerCharacter = "Knight";
+    String playerCharacter = "Knight";
 
     BlockingQueue<Event> eventQueue;
 
@@ -132,13 +136,6 @@ public class DungeonMaster extends PApplet {
         }
 
         player = CharacterFactory.createCharacter(playerCharacter);
-        /*player.setDeathHandler(new Character.DeathHandler() {
-            @Override
-            public void onDeath() {
-                System.out.println("You dead, nigga");
-                gameState = State.GameOver;
-            }
-        });*/
         player.setDeathHandler( () -> {
             System.out.println("You dead, nigga");
             gameState = State.GameOver;
@@ -318,32 +315,6 @@ public class DungeonMaster extends PApplet {
         
         levels[levelIndex].update(millis());
         
-        // level 3 stuff
-        /*float scale = 1.f;
-
-        if (level == Level.Three) {
-            // -60 - scale 0.5
-            // 190 - scale 1
-            
-            if (player.getY() < -60.f) {
-                scale = 0.5f;
-            }
-            else if (player.getY() > 190.f) {
-                scale = 1.f;
-            }
-            else {
-                scale = remap(player.getY(), -60.f, 190.f, 0.5f, 1.f);
-                if (bossSong != null && !bossSong.isPlaying()) {
-                    bossSong.play();
-                }
-            }
-
-            if (bossSong != null && bossSong.isPlaying() && bossSongAmp < 1.f) {
-                bossSongAmp += 0.001f;
-                if (bossSongAmp > 1.f) bossSongAmp = 1.f;
-                bossSong.amp(bossSongAmp);
-            }
-        }*/
         renderer.submit(levels[levelIndex]);
         renderer.submit(player);
         renderer.submit(healthIndicator);
@@ -387,6 +358,15 @@ public class DungeonMaster extends PApplet {
         
         levelIndex = index;
         loadLevel(levels[index]);
+
+        upPressed = false;
+        downPressed = false;
+        leftPressed = false;
+        rightPressed = false;
+        wPressed = false;
+        sPressed = false;
+        aPressed = false;
+        dPressed = false;
     }
 
     private void loadLevel(String levelName) {
@@ -418,10 +398,34 @@ public class DungeonMaster extends PApplet {
             case StartMenu:
                 for (Label levelButton : levelButtons) {
                     if (levelButton.contains(mouseX, mouseY)) {
+                        playerCharacter = leftCharacter.name;
                         loadLevel(levelButton.text);
                         gameState = State.GameRunning;
                         break;
                     }
+                }
+
+                if (leftCharacter.contains(mouseX, mouseY)) {
+                    Random rand = new Random();
+                    String hcName;
+                    do {
+                        hcName = CharacterFactory.HEROES[rand.nextInt(CharacterFactory.HEROES.length)];
+                    } while (hcName == leftCharacter.name && CharacterFactory.HEROES.length > 1);
+                    leftCharacter = CharacterFactory.createCharacter(hcName);
+                    leftCharacter.setPosition(width / 4 * 3, height / 3 * 2);
+                    leftCharacter.setLayer(Renderer.GUI);
+                    leftCharacter.scale = 6;
+                }
+                else if (rightCharacter.contains(mouseX, mouseY)) {
+                    Random rand = new Random();
+                    String mcName;
+                    do {
+                        mcName = CharacterFactory.MONSTERS[rand.nextInt(CharacterFactory.MONSTERS.length)];
+                    } while (mcName == leftCharacter.name && CharacterFactory.MONSTERS.length > 1);
+                    rightCharacter = CharacterFactory.createCharacter(mcName);
+                    rightCharacter.setPosition(width / 4, height / 3 * 2);
+                    rightCharacter.setLayer(Renderer.GUI);
+                    rightCharacter.scale = 6;
                 }
 
                 if (gameState != State.StartMenu) {
